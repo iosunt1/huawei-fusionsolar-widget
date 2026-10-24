@@ -1,8 +1,27 @@
-# Huawei FusionSolar Plasma Widget
+# Huawei FusionSolar Widget
 
 > This project was created with the assistance of AI.
 
-A KDE Plasma 6 widget for a Huawei FusionSolar plant. It shows current PV power, battery charge, home load, grid flow and today's production.
+Widgets for a Huawei FusionSolar plant: a native macOS WidgetKit widget and a KDE Plasma 6 widget. They show current PV power, battery charge, home load, grid flow and today's production.
+
+## macOS widget
+
+The native widget and its account setup app are in `macOS/`. They require macOS 14 or newer and Xcode 15 or newer.
+
+1. Open `macOS/FusionSolarWidget.xcodeproj` in Xcode.
+2. Select a development team for both the **FusionSolarWidget** app and **FusionSolarWidgetExtension** targets. The shared App Group identifier is `group.com.goitonthefloor.fusionsolarwidget`; register it for the selected team if needed.
+3. Build and run the **FusionSolarWidget** app, enter the FusionSolar host, username and password, then choose **Save and refresh**.
+4. Add **Huawei FusionSolar** from the macOS widget gallery in Notification Center or on the desktop.
+
+The widget provides small and medium layouts with live PV power, battery state of charge, home consumption, grid flow and today's yield. macOS controls the widget refresh schedule; the extension requests a new timeline about every 15 minutes. The app and widget share account settings through their sandboxed App Group container, including the password.
+
+The shared FusionSolar client can be built with Swift Package Manager:
+
+```bash
+swift build --package-path macOS/FusionSolarKit
+```
+
+The existing Plasma widget remains available below.
 
 ## What it shows
 
@@ -66,6 +85,7 @@ contents/code/jsrsasign.js
 ```bash
 node tests/api_test.js
 python3 tests/http_test.py
+swift test --package-path macOS/FusionSolarKit
 ```
 
 ## License

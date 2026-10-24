@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* FusionSolarWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* FusionSolarWidgetApp.swift */; };
+		100000000000000000000002 /* FusionSolarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* FusionSolarWidget.swift */; };
+		100000000000000000000003 /* FusionSolarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 700000000000000000000001 /* FusionSolarKit */; };
+		100000000000000000000004 /* FusionSolarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 700000000000000000000002 /* FusionSolarKit */; };
+		800000000000000000000001 /* FusionSolarWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* FusionSolarWidgetExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		300000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000002;
+			remoteInfo = FusionSolarWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		600000000000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/PlugIns";
+			dstSubfolderSpec = 13;
+			files = (800000000000000000000001 /* FusionSolarWidgetExtension.appex in Embed App Extensions */, );
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000001 /* FusionSolarWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusionSolarWidgetApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* FusionSolarWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusionSolarWidget.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* FusionSolarWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FusionSolarWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200000000000000000000004 /* FusionSolarWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = FusionSolarWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		200000000000000000000005 /* FusionSolarWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FusionSolarWidget.entitlements; sourceTree = "<group>"; };
+		200000000000000000000006 /* FusionSolarWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FusionSolarWidget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		900000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (100000000000000000000003 /* FusionSolarKit in Frameworks */, );
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (100000000000000000000004 /* FusionSolarKit in Frameworks */, );
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000002 /* App */,
+				A00000000000000000000003 /* Widget */,
+				A00000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* FusionSolarWidgetApp.swift */,
+				200000000000000000000005 /* FusionSolarWidget.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000002 /* FusionSolarWidget.swift */,
+				200000000000000000000006 /* FusionSolarWidgetExtension.entitlements */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000003 /* FusionSolarWidget.app */,
+				200000000000000000000004 /* FusionSolarWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* FusionSolarWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B000000000000000000000001 /* Build configuration list for PBXNativeTarget "FusionSolarWidget" */;
+			buildPhases = (
+				C000000000000000000000001 /* Sources */,
+				900000000000000000000001 /* Frameworks */,
+				600000000000000000000001 /* Embed App Extensions */,
+			);
+			buildRules = ();
+			dependencies = (D000000000000000000000001 /* PBXTargetDependency */, );
+			name = FusionSolarWidget;
+			packageProductDependencies = (700000000000000000000001 /* FusionSolarKit */, );
+			productName = FusionSolarWidget;
+			productReference = 200000000000000000000003 /* FusionSolarWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500000000000000000000002 /* FusionSolarWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B000000000000000000000002 /* Build configuration list for PBXNativeTarget "FusionSolarWidgetExtension" */;
+			buildPhases = (
+				C000000000000000000000002 /* Sources */,
+				900000000000000000000002 /* Frameworks */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = FusionSolarWidgetExtension;
+			packageProductDependencies = (700000000000000000000002 /* FusionSolarKit */, );
+			productName = FusionSolarWidgetExtension;
+			productReference = 200000000000000000000004 /* FusionSolarWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		400000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					500000000000000000000001 = { CreatedOnToolsVersion = 15.0; };
+					500000000000000000000002 = { CreatedOnToolsVersion = 15.0; };
+				};
+			};
+			buildConfigurationList = B000000000000000000000003 /* Build configuration list for PBXProject "FusionSolarWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base, );
+			mainGroup = A00000000000000000000001;
+			packageReferences = (E00000000000000000000001 /* XCLocalSwiftPackageReference "FusionSolarKit" */, );
+			productRefGroup = A00000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500000000000000000000001 /* FusionSolarWidget */,
+				500000000000000000000002 /* FusionSolarWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C000000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (100000000000000000000001 /* FusionSolarWidgetApp.swift in Sources */, );
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C000000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (100000000000000000000002 /* FusionSolarWidget.swift in Sources */, );
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D000000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500000000000000000000002 /* FusionSolarWidgetExtension */;
+			targetProxy = 300000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F00000000000000000000001 /* Project Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = { MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; };
+			name = Debug;
+		};
+		F00000000000000000000002 /* Project Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = { MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; };
+			name = Release;
+		};
+		F00000000000000000000003 /* App Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = App/FusionSolarWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goitonthefloor.fusionsolarwidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F00000000000000000000004 /* App Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = App/FusionSolarWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goitonthefloor.fusionsolarwidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F00000000000000000000005 /* Extension Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Widget/FusionSolarWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				INFOPLIST_KEY_NSExtension_NSExtensionPrincipalClass = "$(PRODUCT_MODULE_NAME).FusionSolarWidgetBundle";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goitonthefloor.fusionsolarwidget.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F00000000000000000000006 /* Extension Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Widget/FusionSolarWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				INFOPLIST_KEY_NSExtension_NSExtensionPrincipalClass = "$(PRODUCT_MODULE_NAME).FusionSolarWidgetBundle";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goitonthefloor.fusionsolarwidget.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B000000000000000000000001 /* App target configurations */ = {isa = XCConfigurationList; buildConfigurations = (F00000000000000000000003, F00000000000000000000004, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		B000000000000000000000002 /* Extension target configurations */ = {isa = XCConfigurationList; buildConfigurations = (F00000000000000000000005, F00000000000000000000006, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		B000000000000000000000003 /* Project configurations */ = {isa = XCConfigurationList; buildConfigurations = (F00000000000000000000001, F00000000000000000000002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E00000000000000000000001 /* XCLocalSwiftPackageReference "FusionSolarKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = FusionSolarKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		700000000000000000000001 /* FusionSolarKit */ = {isa = XCSwiftPackageProductDependency; package = E00000000000000000000001 /* XCLocalSwiftPackageReference "FusionSolarKit" */; productName = FusionSolarKit; };
+		700000000000000000000002 /* FusionSolarKit */ = {isa = XCSwiftPackageProductDependency; package = E00000000000000000000001 /* XCLocalSwiftPackageReference "FusionSolarKit" */; productName = FusionSolarKit; };
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 400000000000000000000001 /* Project object */;
+}
